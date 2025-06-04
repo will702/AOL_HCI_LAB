@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Picverse Community</title>
+
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <script src="js/index.js" defer></script>
+</head>
+<body>
+
+<!-- Modal Zoom-->
+<div id="artModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="">
+    <h3 id="modalTitle"></h3>
+    <p id="modalArtist"></p>
+    <p id="modalLikes" style="color: #e74c3c; font-weight: bold;">❤️ 0</p>
+  </div>
+</div>
+
+<header>
+  <h1 onclick="location.href='index.html'" style="cursor: pointer;">🎨 Picverse</h1>
+  <nav>
+    <a href="index.html" style="color: #0077ff;">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="submit.html">Submit</a>
+    <a href="community.html">Community</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="slideshow-container">
+    <div class="slide active" style="background-image: url('images/art1.png');">
+      <div class="hero-text">
+        <h2>Unleash Your Creativity</h2>
+        <p>by AliceArt</p>
+        <button onclick="location.href='gallery.html'">Explore Gallery</button>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/art2.png');">
+      <div class="hero-text">
+        <h2>Express Your Imagination</h2>
+        <p>by VisualVin</p>
+        <button onclick="location.href='gallery.html'">Explore Gallery</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trending Tags -->
+<section class="trending-tags">
+  <h3>Trending Tags</h3>
+  <div class="tags">
+    <span>#DigitalArt</span>
+    <span>#Illustration</span>
+    <span>#ConceptArt</span>
+    <span>#3DModel</span>
+    <span>#Portrait</span>
+    <span>#Surrealism</span>
+  </div>
+</section>
+
+<!-- Featured Artworks -->
+<section class="featured-artworks">
+  <h3>Featured Artworks</h3>
+  <div class="masonry-grid">
+
+    <!-- Artwork Card Template -->
+    <div class="artwork" onclick="openModal('images/art1.png', 'Dreamscape', 'AliceArt', 402)">
+      <img src="images/art1.png" alt="Artwork 1">
+      <h4>Dreamscape</h4>
+      <p>❤️ 402</p>
+      <div class="author">
+        <img src="images/peep1.jpg" alt="AliceArt">
+        <span>AliceArt</span>
+      </div>
+    </div>
+
+    <div class="artwork" onclick="openModal('images/art2.png', 'Cyber Pulse', 'ZenDraw', 320)">
+      <img src="images/art2.png" alt="Artwork 2">
+      <h4>Cyber Pulse</h4>
+      <p>❤️ 320</p>
+      <div class="author">
+        <img src="images/peep2.jpg" alt="ZenDraw">
+        <span>ZenDraw</span>
+      </div>
+    </div>
+
+    <div class="artwork" onclick="openModal('images/art3.png', 'Whispers', 'NekoLine', 198)">
+      <img src="images/art3.png" alt="Artwork 3">
+      <h4>Whispers</h4>
+      <p>❤️ 198</p>
+      <div class="author">
+        <img src="images/peep3.jpg" alt="NekoLine">
+        <span>NekoLine</span>
+      </div>
+    </div>
+
+    <div class="artwork" onclick="openModal('images/art4.png', 'Harmony', 'ColorFox', 412)">
+      <img src="images/art4.png" alt="Artwork 4">
+      <h4>Harmony</h4>
+      <p>❤️ 412</p>
+      <div class="author">
+        <img src="images/peep4.jpg" alt="ColorFox">
+        <span>ColorFox</span>
+      </div>
+    </div>
+
+    <div class="artwork" onclick="openModal('images/art5.png', 'Deep Dive', 'MizuOne', 1001)">
+      <img src="images/art5.png" alt="Artwork 5">
+      <h4>Deep Dive</h4>
+      <p>❤️ 1001</p>
+      <div class="author">
+        <img src="images/peep3.jpg" alt="MizuOne">
+        <span>MizuOne</span>
+      </div>
+    </div>
+
+    <div class="artwork" onclick="openModal('images/art6.png', 'Zen Garden', 'MizuOne', 800)">
+      <img src="images/art6.png" alt="Artwork 6">
+      <h4>Zen Garden</h4>
+      <p>❤️ 800</p>
+      <div class="author">
+        <img src="images/peep4.jpg" alt="MizuOne">
+        <span>MizuOne</span>
+      </div>
+    </div>
+
+    <div class="artwork" onclick="openModal('images/art7.png', 'Final Light', 'MizuOne', 742)">
+      <img src="images/art7.png" alt="Artwork 7">
+      <h4>Final Light</h4>
+      <p>❤️ 742</p>
+      <div class="author">
+        <img src="images/peep4.jpg" alt="MizuOne">
+        <span>MizuOne</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Picverse Community</p>
+</footer>
+
+</body>
+</html>

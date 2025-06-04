@@ -1,0 +1,135 @@
+/* Community Sections */
+.community-section {
+  margin-bottom: 50px;
+}
+
+/* Forum Cards Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.forum-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 4px solid #0077ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Forum & Activity Styles */
+.forum-section .forum {
+  padding: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.forum h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.recent-activity ul,
+.activity-feed {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recent-activity li,
+.activity-feed li {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.recent-activity li::before {
+  content: "•";
+  color: #0077ff;
+  position: absolute;
+  left: 0;
+}
+
+.activity-feed li::before {
+  content: "→";
+  color: #0077ff;
+  position: absolute;
+  left: 0;
+}
+
+/* Grid for Users (non-carousel) */
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* User Card */
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f2f6fc;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.user-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tagline {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0;
+}
+
+/* ====================== */
+/* Auto-Scrolling Carousel */
+/* ====================== */
+.active-users {
+  margin-top: 60px;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.active-users h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 10px;
+  position: relative;
+}
+
+.user-carousel .user-card {
+  flex-shrink: 0;
+  width: 140px;
+  background-color: #f2f6fc;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.user-carousel .user-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.user-carousel .user-card p {
+  font-size: 0.95em;
+  font-weight: bold;
+  margin: 0;
+}
